@@ -12,7 +12,7 @@ class BurgersService {
     }
   }
   deleteBurger(burgerId) {
-    const burger = this.getBurgerById()
+    const burger = this.getBurgerById(burgerId)
     burgers.burgers.splice(burgers.burgers.indexOf(burger), 1)
   }
   getBurgerById(burgerId) {
